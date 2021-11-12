@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/txtTinhThanh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tỉnh thành"
+            android:textSize="20dp"
+            android:inputType="textCapWords"/>
+        <Spinner
+            android:id="@+id/spnKieuThoiTiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txtMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mô tả thời tiết"
+            android:textSize="20dp"
+            android:gravity="right"
+            android:inputType="textCapWords"/>
+        <EditText
+            android:id="@+id/txtNhietDo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhiệt độ"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:maxLength="2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btnThem"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:onClick="addWeather"
+            android:text="Thêm"
+            android:enabled="true"/>
+        <Button
+            android:id="@+id/btnSua"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+
+            android:text="Sủa"
+            android:enabled="false"/>
+    </LinearLayout>
+
+</RelativeLayout>
